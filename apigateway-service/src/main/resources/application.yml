@@ -99,8 +99,9 @@ spring:
           uri: lb://ORDER-SERVICE
           predicates:
             - Path=/order-service/**
-token:
-  secret: user_token
+
+#token:
+#  secret: user_token
 
 management:
   endpoints:
