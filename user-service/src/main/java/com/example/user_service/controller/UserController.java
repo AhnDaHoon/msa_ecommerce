@@ -80,7 +80,7 @@ public class UserController {
 
     @GetMapping("/users/{userId}")
     public ResponseEntity<ResponseUser> getUser(@PathVariable(value = "userId") String userId) {
-        UserDto userById = userService.getUserById(userId);
+        UserDto userById = userService.getUserByUserId(userId);
 
         ResponseUser result = new ModelMapper().map(userById, ResponseUser.class);
 
